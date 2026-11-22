@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Cài đặt</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #05070d;
+    color: white;
+}
+
+.container {
+    display: flex;
+    padding: 40px;
+}
+
+.sidebar {
+    width: 250px;
+    background: #0b1325;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.menu a {
+    display: block;
+    margin: 12px 0;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.content {
+    margin-left: 40px;
+    width: 600px;
+}
+
+.box {
+    background: #0b1325;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: none;
+    background: #111a33;
+    color: white;
+}
+
+button {
+    background: #5b5cff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7778ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Akat's</h3>
+        <div class="menu">
+            <a href="profile.html">Thông tin chung</a>
+            <a href="#">Cài đặt</a>
+            <a href="#">Trang chủ</a>
+            <a href="#">Đăng xuất</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Đổi mật khẩu -->
+        <div class="box">
+            <h3>Đổi mật khẩu</h3>
+            <input type="password" placeholder="Mật khẩu cũ">
+            <input type="password" placeholder="Mật khẩu mới">
+            <input type="password" placeholder="Xác nhận mật khẩu">
+            <button>Lưu</button>
+        </div>
+
+        <!-- Đổi tên -->
+        <div class="box">
+            <h3>Đổi tên người dùng</h3>
+            <input type="text" placeholder="Tên mới">
+            <button>Lưu</button>
+        </div>
+
+        <!-- Đổi avatar -->
+        <div class="box">
+            <h3>Đổi ảnh đại diện</h3>
+            <input type="file">
+            <button>Lưu</button>
+
+            <p style="margin-top:10px;font-size:13px;color:#aaa;">
+                - Kích thước < 1MB <br>
+                - Ảnh nhạy cảm sẽ bị ban vĩnh viễn
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
